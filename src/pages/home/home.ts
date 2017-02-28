@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { ReactUI } from './react-page';
 
 @Component({
   selector: 'page-home',
@@ -14,10 +12,7 @@ export class HomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FormPage');
-    ReactDOM.render(
-      <h1>Hello, world!</h1>,
-      document.getElementById('react-container')
-    );
+    ReactUI.initialize();
   }
 
 }
